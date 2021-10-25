@@ -32,7 +32,7 @@ class BinaryTree:
         if self.root is None:
             return
         yield from self.root.walk()
-    
+
 class TreeNode:
     def __init__(self, key, value):
         self.key = key
@@ -95,13 +95,13 @@ class TreeNode:
                 maxnode.left = self.left
                 maxnode.right = self.right
                 return maxnode
-                
-        elif key < self.key:
+
+        elif key < self.key and self.left is not None:
             # ask left child to delete
             self.left = self.left.delete(key)
-        else:
+        elif key > self.key and self.right is not None:
             # ask right child to delete
-            self.right = self.right.delete(key)            
+            self.right = self.right.delete(key)
         return self
 
     def walk(self):
@@ -110,7 +110,7 @@ class TreeNode:
         yield (self.key, self.value)
         if self.right is not None:
             yield from self.right.walk()
-    
+
 
 def test_add_find():
     tn = TreeNode(10, "ten")
@@ -146,7 +146,7 @@ def test_tree():
     assert(t.lookup(10) == "10")
     assert(t.lookup(5) == "5")
     assert(t.lookup(15) == "15")
-    
+
     t.delete(10)
     assert(t.lookup(10) is None)
     assert(t.lookup(5) == "5")
@@ -161,7 +161,7 @@ def test_tree():
     assert(t.lookup(10) is None)
     assert(t.lookup(5) is None)
     assert(t.lookup(15) is None)
-    
+
 def test_walk():
     items = [(10,10), (5,5), (15,15), (12,12), (1,1), (6,6)]
     t = BinaryTree()
