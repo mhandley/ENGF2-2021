@@ -9,6 +9,7 @@ def test_is_in():
     assert is_in_bisect([1,2,3,4], 2)
     assert is_in_bisect([1,2,3,4], 1)
     assert is_in_bisect([1,2,2,2,3], 2)
+    assert is_in_bisect([2,3,4,5,6,7],3)
     assert not is_in_bisect([1,2,3,3,3,10], 4)
 
 def is_in_bisect(lst, val):

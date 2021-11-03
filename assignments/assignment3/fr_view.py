@@ -176,6 +176,7 @@ class View(Frame):
         root.wm_title("Frogger")
         self.windowsystem = root.call('tk', 'windowingsystem')
         self.frame = root
+        root.tk.call('tk', 'scaling', 2.0)
         self.canvas = Canvas(self.frame, width=CANVAS_WIDTH, height=CANVAS_HEIGHT, bg="black")
         self.canvas.pack(side = LEFT, fill=BOTH, expand=FALSE)
         self.init_fonts()
