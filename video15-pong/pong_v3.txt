@@ -1,4 +1,4 @@
-Pong v1 Protocol Specification
+Pong v3 Protocol Specification
 ==============================
 
 Terminology
@@ -7,7 +7,7 @@ Terminology
 This specification uses the terms MUST, SHOULD, and MAY as defined in
 RFC 2119 [rfc2119]
 
-The pong v1 protocol runs over TCP, using a well known port of 5432.
+The pong v3 protocol runs over TCP, using a well known port of 5432.
 There are three message types: INIT, BAT_UPDATE and BALL_UPDATE.
 
 Every time a player moves their bat, their computer sends a BAT_UPDATE
