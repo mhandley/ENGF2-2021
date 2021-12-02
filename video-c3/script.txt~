@@ -1,0 +1,23 @@
+Boeing's 787 Dreamliner pioneered new frontiers in aircraft design; not
+only was it the first airliner to have a carbon fibre fuselage, but
+to increase efficiency it also uses electricity for many more
+functions than normal, including hydraulic pumps, cabin air pressure,
+and the wheel brakes.
+
+All this electricity comes from four generators mounted on the engines,
+backed up by a large lithium battery.
+
+The 787's introduction into passenger service didn't go smoothly, as
+all 787s were grounded for four months due to the battery having a
+tendency to catch fire.  This design flaw was eventually fixed, and
+it's not this problem we're interested in.
+
+In 2015, the US Federal Aviation Administration released this
+airworthyness directive to 787 operators.  It states that a 787 that
+has been powered continuously for 248 days can lose all AC electrical
+power.  This is caused by a software counter internal to the
+generators overflowing after 248 days of continuous power.
+
+Yes, that's right, the FAA required airlines to reboot their 787s at
+least once every 247 days or the generators will stop working.  With
+so many electrically powered systems, that would not be good.
